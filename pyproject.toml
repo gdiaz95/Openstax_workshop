@@ -1,0 +1,27 @@
+[project]
+name = "openstax_workshop"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Gabriel Diaz"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "jupyter (>=1.1.1,<2.0.0)",
+    "ipykernel (>=7.1.0,<8.0.0)",
+    "pandas (>=2.3.3,<3.0.0)",
+    "pyarrow (>=22.0.0,<23.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+package-mode = false
+
+[virtualenvs]
+in-project = true
+
